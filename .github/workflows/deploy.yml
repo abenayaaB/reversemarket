@@ -38,7 +38,7 @@ jobs:
         env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
-        run: npm run build -- --base=/YOUR-REPO-NAME/
+        run: npm run build -- --base=/reversemarket/
 
       - name: Create SPA fallback
         working-directory: client
